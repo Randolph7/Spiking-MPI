@@ -1,4 +1,3 @@
-*2024年2月22日*
 
 # 设计原理
 
@@ -10,9 +9,7 @@
 
 ## 3、Recv
 
-
-
-# STEP1 Build CMake 
+# STEP1 Build CMake
 
 Run 'make' under the project.
 Run 'make clean' each time the 'src/CMakelists' has been modified.
