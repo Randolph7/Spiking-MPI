@@ -1,3 +1,0 @@
-/home/randolph/Develop/Spiking-MPI/build/CMakeFiles/sMPI.dir
-/home/randolph/Develop/Spiking-MPI/build/CMakeFiles/edit_cache.dir
-/home/randolph/Develop/Spiking-MPI/build/CMakeFiles/rebuild_cache.dir
