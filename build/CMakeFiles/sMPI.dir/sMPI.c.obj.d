@@ -1,7 +1,7 @@
 CMakeFiles/sMPI.dir/sMPI.c.obj: \
- /home/randolph/Develop/cmake_rv/sMPI/src/sMPI.c \
- /home/randolph/Develop/cmake_rv/sMPI/src/../include/sMPI.h \
- /home/randolph/Develop/cmake_rv/sMPI/src/../include/common.h \
+ /home/randolph/Develop/Spiking-MPI/src/sMPI.c \
+ /home/randolph/Develop/Spiking-MPI/src/../include/sMPI.h \
+ /home/randolph/Develop/Spiking-MPI/src/../include/common.h \
  /home/randolph/Develop/cmake_rv/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdint.h \
  /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/stdint.h \
  /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/machine/_default_types.h \

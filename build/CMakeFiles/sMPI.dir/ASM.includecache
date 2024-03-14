@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/randolph/Develop/cmake_rv/sMPI/include/bits.h
+/home/randolph/Develop/Spiking-MPI/include/bits.h
 
-/home/randolph/Develop/cmake_rv/sMPI/src/start.S
+/home/randolph/Develop/Spiking-MPI/src/start.S
 bits.h
 -
 

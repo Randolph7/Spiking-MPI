@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/randolph/Develop/cmake_rv/sMPI/src
+CMAKE_SOURCE_DIR = /home/randolph/Develop/Spiking-MPI/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/randolph/Develop/cmake_rv/sMPI/build
+CMAKE_BINARY_DIR = /home/randolph/Develop/Spiking-MPI/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolph/Develop/cmake_rv/sMPI/build/CMakeFiles /home/randolph/Develop/cmake_rv/sMPI/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolph/Develop/Spiking-MPI/build/CMakeFiles /home/randolph/Develop/Spiking-MPI/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolph/Develop/cmake_rv/sMPI/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/randolph/Develop/Spiking-MPI/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,30 +177,6 @@ intc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sMPI.dir/build.make CMakeFiles/sMPI.dir/intc.c.s
 .PHONY : intc.c.s
 
-main.obj: main.c.obj
-.PHONY : main.obj
-
-# target to build an object file
-main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sMPI.dir/build.make CMakeFiles/sMPI.dir/main.c.obj
-.PHONY : main.c.obj
-
-main.i: main.c.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sMPI.dir/build.make CMakeFiles/sMPI.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sMPI.dir/build.make CMakeFiles/sMPI.dir/main.c.s
-.PHONY : main.c.s
-
 sMPI.obj: sMPI.c.obj
 .PHONY : sMPI.obj
 
@@ -233,6 +209,30 @@ start.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sMPI.dir/build.make CMakeFiles/sMPI.dir/start.S.obj
 .PHONY : start.S.obj
 
+test.obj: test.c.obj
+.PHONY : test.obj
+
+# target to build an object file
+test.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sMPI.dir/build.make CMakeFiles/sMPI.dir/test.c.obj
+.PHONY : test.c.obj
+
+test.i: test.c.i
+.PHONY : test.i
+
+# target to preprocess a source file
+test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sMPI.dir/build.make CMakeFiles/sMPI.dir/test.c.i
+.PHONY : test.c.i
+
+test.s: test.c.s
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sMPI.dir/build.make CMakeFiles/sMPI.dir/test.c.s
+.PHONY : test.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -248,13 +248,13 @@ help:
 	@echo "... intc.obj"
 	@echo "... intc.i"
 	@echo "... intc.s"
-	@echo "... main.obj"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... sMPI.obj"
 	@echo "... sMPI.i"
 	@echo "... sMPI.s"
 	@echo "... start.obj"
+	@echo "... test.obj"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 

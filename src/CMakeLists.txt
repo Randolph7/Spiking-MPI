@@ -10,7 +10,8 @@ set(CMAKE_ASM_FLAGS "${CMAKE_C_FLAGS}")
 # Source files
 set(SOURCE_FILES
     ../src/start.S #Keep this start file at the beginning.
-    ../src/main.c
+	#../src/main.c
+	../src/test.c
     ../src/common.c
     ../src/intc.c
     ../src/sMPI.c

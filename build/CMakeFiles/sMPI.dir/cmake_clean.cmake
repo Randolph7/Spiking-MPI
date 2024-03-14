@@ -3,11 +3,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/sMPI.dir/common.c.obj.d"
   "CMakeFiles/sMPI.dir/intc.c.obj"
   "CMakeFiles/sMPI.dir/intc.c.obj.d"
-  "CMakeFiles/sMPI.dir/main.c.obj"
-  "CMakeFiles/sMPI.dir/main.c.obj.d"
   "CMakeFiles/sMPI.dir/sMPI.c.obj"
   "CMakeFiles/sMPI.dir/sMPI.c.obj.d"
   "CMakeFiles/sMPI.dir/start.S.obj"
+  "CMakeFiles/sMPI.dir/test.c.obj"
+  "CMakeFiles/sMPI.dir/test.c.obj.d"
   "sMPI"
   "sMPI.pdb"
 )

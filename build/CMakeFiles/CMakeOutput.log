@@ -11,7 +11,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
 
-The C compiler identification is GNU, found in "/home/randolph/Develop/cmake_rv/sMPI/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.o"
+The C compiler identification is GNU, found in "/home/randolph/Develop/Spiking-MPI/build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.o"
 
 Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
 riscv32-unknown-elf-gcc () 13.2.0
@@ -20,13 +20,13 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/randolph/Develop/cmake_rv/sMPI/build/CMakeFiles/CMakeTmp
+Change Dir: /home/randolph/Develop/Spiking-MPI/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_45a1d/fast && gmake[1]: Entering directory '/home/randolph/Develop/cmake_rv/sMPI/build/CMakeFiles/CMakeTmp'
-/usr/bin/gmake  -f CMakeFiles/cmTC_45a1d.dir/build.make CMakeFiles/cmTC_45a1d.dir/build
-gmake[2]: Entering directory '/home/randolph/Develop/cmake_rv/sMPI/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj
-/home/randolph/Develop/cmake_rv/bin/riscv32-unknown-elf-gcc   -g -march=rv32imac_zicsr -g -march=rv32imac_zicsr    -v -o CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_23dfe/fast && gmake[1]: Entering directory '/home/randolph/Develop/Spiking-MPI/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_23dfe.dir/build.make CMakeFiles/cmTC_23dfe.dir/build
+gmake[2]: Entering directory '/home/randolph/Develop/Spiking-MPI/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj
+/home/randolph/Develop/cmake_rv/bin/riscv32-unknown-elf-gcc   -g -march=rv32imac_zicsr -g -march=rv32imac_zicsr    -v -o CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/home/randolph/Develop/cmake_rv/bin/riscv32-unknown-elf-gcc
 Target: riscv32-unknown-elf
@@ -34,8 +34,8 @@ Configured with: /home/stnolting/tmp/rvgcc/riscv-gnu-toolchain/gcc/configure --t
 Thread model: single
 Supported LTO compression algorithms: zlib
 gcc version 13.2.0 () 
-COLLECT_GCC_OPTIONS='-g' '-g' '-march=rv32imac_zicsr' '-v' '-o' 'CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'CMakeFiles/cmTC_45a1d.dir/'
- /home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/cc1 -quiet -v -iprefix /home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/ -isysroot /home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_45a1d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=rv32imac_zicsr -mtune=rocket -mabi=ilp32 -misa-spec=20191213 -march=rv32imac_zicsr -g -g -version -o /tmp/ccSG8HT1.s
+COLLECT_GCC_OPTIONS='-g' '-g' '-march=rv32imac_zicsr' '-v' '-o' 'CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'CMakeFiles/cmTC_23dfe.dir/'
+ /home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/cc1 -quiet -v -iprefix /home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/ -isysroot /home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_23dfe.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=rv32imac_zicsr -mtune=rocket -mabi=ilp32 -misa-spec=20191213 -march=rv32imac_zicsr -g -g -version -o /tmp/ccogrDMz.s
 GNU C17 () version 13.2.0 (riscv32-unknown-elf)
 	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
 warning: GMP header version 6.2.0 differs from library version 6.2.1.
@@ -54,15 +54,15 @@ ignoring duplicate directory "/home/randolph/Develop/cmake_rv/bin/../riscv32-unk
  /home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/include
 End of search list.
 Compiler executable checksum: abcdb59267bb65626140602ce4633f65
-COLLECT_GCC_OPTIONS='-g' '-g' '-march=rv32imac_zicsr' '-v' '-o' 'CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'CMakeFiles/cmTC_45a1d.dir/'
- /home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/as -v --gdwarf-5 --traditional-format -march=rv32imac_zicsr -march=rv32imac_zicsr -mabi=ilp32 -misa-spec=20191213 -o CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj /tmp/ccSG8HT1.s
+COLLECT_GCC_OPTIONS='-g' '-g' '-march=rv32imac_zicsr' '-v' '-o' 'CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'CMakeFiles/cmTC_23dfe.dir/'
+ /home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/as -v --gdwarf-5 --traditional-format -march=rv32imac_zicsr -march=rv32imac_zicsr -mabi=ilp32 -misa-spec=20191213 -o CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj /tmp/ccogrDMz.s
 GNU assembler version 2.41 (riscv32-unknown-elf) using BFD version (GNU Binutils) 2.41
 COMPILER_PATH=/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/:/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/:/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/
 LIBRARY_PATH=/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/:/home/randolph/Develop/cmake_rv/bin/../lib/gcc/:/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/lib/:/home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf/lib/
-COLLECT_GCC_OPTIONS='-g' '-g' '-march=rv32imac_zicsr' '-v' '-o' 'CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.'
-Linking C executable cmTC_45a1d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45a1d.dir/link.txt --verbose=1
-/home/randolph/Develop/cmake_rv/bin/riscv32-unknown-elf-gcc  -g -march=rv32imac_zicsr -g -march=rv32imac_zicsr    -march=rv32imac_zicsr    -nostartfiles     -march=rv32imac_zicsr    -nostartfiles    -v CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj -o cmTC_45a1d 
+COLLECT_GCC_OPTIONS='-g' '-g' '-march=rv32imac_zicsr' '-v' '-o' 'CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_23dfe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23dfe.dir/link.txt --verbose=1
+/home/randolph/Develop/cmake_rv/bin/riscv32-unknown-elf-gcc  -g -march=rv32imac_zicsr -g -march=rv32imac_zicsr    -march=rv32imac_zicsr    -nostartfiles     -march=rv32imac_zicsr    -nostartfiles    -v CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj -o cmTC_23dfe 
 Using built-in specs.
 COLLECT_GCC=/home/randolph/Develop/cmake_rv/bin/riscv32-unknown-elf-gcc
 COLLECT_LTO_WRAPPER=/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/lto-wrapper
@@ -73,12 +73,12 @@ Supported LTO compression algorithms: zlib
 gcc version 13.2.0 () 
 COMPILER_PATH=/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/:/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/:/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/
 LIBRARY_PATH=/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/:/home/randolph/Develop/cmake_rv/bin/../lib/gcc/:/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/lib/:/home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf/lib/
-COLLECT_GCC_OPTIONS='-g' '-g' '-nostartfiles' '-march=rv32imac_zicsr' '-nostartfiles' '-v' '-o' 'cmTC_45a1d' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'cmTC_45a1d.'
- /home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/collect2 -plugin /home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/liblto_plugin.so -plugin-opt=/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccx4qU6Y.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgloss -plugin-opt=-pass-through=-lgcc --sysroot=/home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf -melf32lriscv -o cmTC_45a1d -L/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0 -L/home/randolph/Develop/cmake_rv/bin/../lib/gcc -L/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/lib -L/home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf/lib CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj -lgcc --start-group -lc -lgloss --end-group -lgcc
+COLLECT_GCC_OPTIONS='-g' '-g' '-nostartfiles' '-march=rv32imac_zicsr' '-nostartfiles' '-v' '-o' 'cmTC_23dfe' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'cmTC_23dfe.'
+ /home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/collect2 -plugin /home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/liblto_plugin.so -plugin-opt=/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJwWkhz.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgloss -plugin-opt=-pass-through=-lgcc --sysroot=/home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf -melf32lriscv -o cmTC_23dfe -L/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0 -L/home/randolph/Develop/cmake_rv/bin/../lib/gcc -L/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/lib -L/home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf/lib CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj -lgcc --start-group -lc -lgloss --end-group -lgcc
 /home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 00010074
-COLLECT_GCC_OPTIONS='-g' '-g' '-nostartfiles' '-march=rv32imac_zicsr' '-nostartfiles' '-v' '-o' 'cmTC_45a1d' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'cmTC_45a1d.'
-gmake[2]: Leaving directory '/home/randolph/Develop/cmake_rv/sMPI/build/CMakeFiles/CMakeTmp'
-gmake[1]: Leaving directory '/home/randolph/Develop/cmake_rv/sMPI/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-g' '-g' '-nostartfiles' '-march=rv32imac_zicsr' '-nostartfiles' '-v' '-o' 'cmTC_23dfe' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'cmTC_23dfe.'
+gmake[2]: Leaving directory '/home/randolph/Develop/Spiking-MPI/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/randolph/Develop/Spiking-MPI/build/CMakeFiles/CMakeTmp'
 
 
 
@@ -97,13 +97,13 @@ Parsed C implicit include dir info from above output: rv=done
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(riscv32-unknown-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/randolph/Develop/cmake_rv/sMPI/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/randolph/Develop/Spiking-MPI/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_45a1d/fast && gmake[1]: Entering directory '/home/randolph/Develop/cmake_rv/sMPI/build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_45a1d.dir/build.make CMakeFiles/cmTC_45a1d.dir/build]
-  ignore line: [gmake[2]: Entering directory '/home/randolph/Develop/cmake_rv/sMPI/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [/home/randolph/Develop/cmake_rv/bin/riscv32-unknown-elf-gcc   -g -march=rv32imac_zicsr -g -march=rv32imac_zicsr    -v -o CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_23dfe/fast && gmake[1]: Entering directory '/home/randolph/Develop/Spiking-MPI/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_23dfe.dir/build.make CMakeFiles/cmTC_23dfe.dir/build]
+  ignore line: [gmake[2]: Entering directory '/home/randolph/Develop/Spiking-MPI/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/home/randolph/Develop/cmake_rv/bin/riscv32-unknown-elf-gcc   -g -march=rv32imac_zicsr -g -march=rv32imac_zicsr    -v -o CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/home/randolph/Develop/cmake_rv/bin/riscv32-unknown-elf-gcc]
   ignore line: [Target: riscv32-unknown-elf]
@@ -111,8 +111,8 @@ Parsed C implicit link information from above output:
   ignore line: [Thread model: single]
   ignore line: [Supported LTO compression algorithms: zlib]
   ignore line: [gcc version 13.2.0 () ]
-  ignore line: [COLLECT_GCC_OPTIONS='-g' '-g' '-march=rv32imac_zicsr' '-v' '-o' 'CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'CMakeFiles/cmTC_45a1d.dir/']
-  ignore line: [ /home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/cc1 -quiet -v -iprefix /home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/ -isysroot /home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_45a1d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=rv32imac_zicsr -mtune=rocket -mabi=ilp32 -misa-spec=20191213 -march=rv32imac_zicsr -g -g -version -o /tmp/ccSG8HT1.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-g' '-g' '-march=rv32imac_zicsr' '-v' '-o' 'CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'CMakeFiles/cmTC_23dfe.dir/']
+  ignore line: [ /home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/cc1 -quiet -v -iprefix /home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/ -isysroot /home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_23dfe.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=rv32imac_zicsr -mtune=rocket -mabi=ilp32 -misa-spec=20191213 -march=rv32imac_zicsr -g -g -version -o /tmp/ccogrDMz.s]
   ignore line: [GNU C17 () version 13.2.0 (riscv32-unknown-elf)]
   ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
   ignore line: [warning: GMP header version 6.2.0 differs from library version 6.2.1.]
@@ -131,15 +131,15 @@ Parsed C implicit link information from above output:
   ignore line: [ /home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/include]
   ignore line: [End of search list.]
   ignore line: [Compiler executable checksum: abcdb59267bb65626140602ce4633f65]
-  ignore line: [COLLECT_GCC_OPTIONS='-g' '-g' '-march=rv32imac_zicsr' '-v' '-o' 'CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'CMakeFiles/cmTC_45a1d.dir/']
-  ignore line: [ /home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/as -v --gdwarf-5 --traditional-format -march=rv32imac_zicsr -march=rv32imac_zicsr -mabi=ilp32 -misa-spec=20191213 -o CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj /tmp/ccSG8HT1.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-g' '-g' '-march=rv32imac_zicsr' '-v' '-o' 'CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'CMakeFiles/cmTC_23dfe.dir/']
+  ignore line: [ /home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/as -v --gdwarf-5 --traditional-format -march=rv32imac_zicsr -march=rv32imac_zicsr -mabi=ilp32 -misa-spec=20191213 -o CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj /tmp/ccogrDMz.s]
   ignore line: [GNU assembler version 2.41 (riscv32-unknown-elf) using BFD version (GNU Binutils) 2.41]
   ignore line: [COMPILER_PATH=/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/:/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/:/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/]
   ignore line: [LIBRARY_PATH=/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/:/home/randolph/Develop/cmake_rv/bin/../lib/gcc/:/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/lib/:/home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-g' '-g' '-march=rv32imac_zicsr' '-v' '-o' 'CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.']
-  ignore line: [Linking C executable cmTC_45a1d]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45a1d.dir/link.txt --verbose=1]
-  ignore line: [/home/randolph/Develop/cmake_rv/bin/riscv32-unknown-elf-gcc  -g -march=rv32imac_zicsr -g -march=rv32imac_zicsr    -march=rv32imac_zicsr    -nostartfiles     -march=rv32imac_zicsr    -nostartfiles    -v CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj -o cmTC_45a1d ]
+  ignore line: [COLLECT_GCC_OPTIONS='-g' '-g' '-march=rv32imac_zicsr' '-v' '-o' 'CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_23dfe]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23dfe.dir/link.txt --verbose=1]
+  ignore line: [/home/randolph/Develop/cmake_rv/bin/riscv32-unknown-elf-gcc  -g -march=rv32imac_zicsr -g -march=rv32imac_zicsr    -march=rv32imac_zicsr    -nostartfiles     -march=rv32imac_zicsr    -nostartfiles    -v CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj -o cmTC_23dfe ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/home/randolph/Develop/cmake_rv/bin/riscv32-unknown-elf-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/lto-wrapper]
@@ -150,13 +150,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 13.2.0 () ]
   ignore line: [COMPILER_PATH=/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/:/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/:/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/bin/]
   ignore line: [LIBRARY_PATH=/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/:/home/randolph/Develop/cmake_rv/bin/../lib/gcc/:/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/lib/:/home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-g' '-g' '-nostartfiles' '-march=rv32imac_zicsr' '-nostartfiles' '-v' '-o' 'cmTC_45a1d' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'cmTC_45a1d.']
-  link line: [ /home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/collect2 -plugin /home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/liblto_plugin.so -plugin-opt=/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccx4qU6Y.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgloss -plugin-opt=-pass-through=-lgcc --sysroot=/home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf -melf32lriscv -o cmTC_45a1d -L/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0 -L/home/randolph/Develop/cmake_rv/bin/../lib/gcc -L/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/lib -L/home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf/lib CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj -lgcc --start-group -lc -lgloss --end-group -lgcc]
+  ignore line: [COLLECT_GCC_OPTIONS='-g' '-g' '-nostartfiles' '-march=rv32imac_zicsr' '-nostartfiles' '-v' '-o' 'cmTC_23dfe' '-mtune=rocket' '-mabi=ilp32' '-misa-spec=20191213' '-march=rv32imac_zicsr' '-dumpdir' 'cmTC_23dfe.']
+  link line: [ /home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/collect2 -plugin /home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/liblto_plugin.so -plugin-opt=/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJwWkhz.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgloss -plugin-opt=-pass-through=-lgcc --sysroot=/home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf -melf32lriscv -o cmTC_23dfe -L/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0 -L/home/randolph/Develop/cmake_rv/bin/../lib/gcc -L/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/lib -L/home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf/lib CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj -lgcc --start-group -lc -lgloss --end-group -lgcc]
     arg [/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/home/randolph/Develop/cmake_rv/bin/../libexec/gcc/riscv32-unknown-elf/13.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccx4qU6Y.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccJwWkhz.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgloss] ==> ignore
@@ -164,12 +164,12 @@ Parsed C implicit link information from above output:
     arg [--sysroot=/home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf] ==> ignore
     arg [-melf32lriscv] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_45a1d] ==> ignore
+    arg [cmTC_23dfe] ==> ignore
     arg [-L/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0] ==> dir [/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0]
     arg [-L/home/randolph/Develop/cmake_rv/bin/../lib/gcc] ==> dir [/home/randolph/Develop/cmake_rv/bin/../lib/gcc]
     arg [-L/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/lib] ==> dir [/home/randolph/Develop/cmake_rv/bin/../lib/gcc/riscv32-unknown-elf/13.2.0/../../../../riscv32-unknown-elf/lib]
     arg [-L/home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf/lib] ==> dir [/home/randolph/Develop/cmake_rv/bin/../riscv32-unknown-elf/lib]
-    arg [CMakeFiles/cmTC_45a1d.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [CMakeFiles/cmTC_23dfe.dir/CMakeCCompilerABI.c.obj] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--start-group] ==> ignore
     arg [-lc] ==> lib [c]
