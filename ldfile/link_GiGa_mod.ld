@@ -1,22 +1,18 @@
 OUTPUT_ARCH( "riscv" )
 MEMORY
 {
-MEM2(RWX)  : ORIGIN = 0x2000C000,  LENGTH = 0x8000
+  MEM2(RWX)  : ORIGIN = 0x2000C000,  LENGTH = 0x8000
 }
 ENTRY(_start)
 
 SECTIONS {
     .text :
     {
-        *(.text)
-        *(.text.init*)
-        . = ALIGN(0x10);
-    } >MEM2
-    .text :
-    {
-        *(.text*)
-        . = ALIGN(0x10);
-    } >MEM2
+      *(.text.init*)
+      *(.text*)
+      *(.text.*)
+      . = ALIGN(0x10);
+    } > MEM2
     .rodata :
     {
       *(.rodata*)

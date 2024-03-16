@@ -9,11 +9,11 @@ set(CMAKE_ASM_FLAGS "${CMAKE_C_FLAGS}")
 
 # Source files
 set(SOURCE_FILES
-    ../src/start.S #Keep this start file at the beginning.
+    ../src/crt0.S #Keep this start file at the beginning.
     ../src/main.c
-    ../src/common.c
-    ../src/intc.c
-    ../src/sMPI.c
+    ##../src/common.c
+    ##../src/intc.c
+    ##../src/sMPI.c
 )
 
 # Include directories
@@ -27,15 +27,22 @@ set(TARGET "sMPI")
 # Add the executable
 add_executable(${TARGET} ${SOURCE_FILES})
 
-# Linker script
+# 设置链接器脚本的路径
 set(LINKER_SCRIPT "${CMAKE_CURRENT_SOURCE_DIR}/../ldfile/link_GiGa_mod.ld")
 
-# Set the target properties for the linker and output file names
+# 设置目标属性，包括输出文件名
 set_target_properties(${TARGET} PROPERTIES
-    LINK_FLAGS "-T ${LINKER_SCRIPT} -Xlinker --gc-sections --specs=nosys.specs -nostartfiles"
     OUTPUT_NAME "${TARGET}"
     SUFFIX ""
     PREFIX ""
+)
+
+# 为目标添加链接选项
+target_link_options(${TARGET} PRIVATE
+    -T${LINKER_SCRIPT}
+    -Xlinker --gc-sections
+    --specs=nosys.specs
+    #-nostartfiles
 )
 
 # # Generate HEX file

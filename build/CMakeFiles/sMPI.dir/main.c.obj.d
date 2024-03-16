@@ -1,0 +1,23 @@
+CMakeFiles/sMPI.dir/main.c.obj: \
+ /home/randolph/Develop/Spiking-MPI/src/main.c \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/stdio.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/_ansi.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/newlib.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/_newlib_version.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/sys/config.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/machine/ieeefp.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/sys/features.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/sys/cdefs.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/machine/_default_types.h \
+ /home/randolph/Develop/cmake_rv/lib/gcc/riscv32-unknown-elf/13.2.0/include/stddef.h \
+ /home/randolph/Develop/cmake_rv/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdarg.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/sys/reent.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/_ansi.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/sys/_types.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/machine/_types.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/sys/lock.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/sys/stdio.h \
+ /home/randolph/Develop/cmake_rv/lib/gcc/riscv32-unknown-elf/13.2.0/include/stdint.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/stdint.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/sys/_intsup.h \
+ /home/randolph/Develop/cmake_rv/riscv32-unknown-elf/include/sys/_stdint.h

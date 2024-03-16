@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/randolph/Develop/Spiking-MPI/include/bits.h
+
+/home/randolph/Develop/Spiking-MPI/src/crt0.S
+bits.h
+-
+
