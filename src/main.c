@@ -12,6 +12,19 @@
 
 int router_rcv_int_flag;//中断的flag
 
+void write_reg32(uint32_t addr,uint32_t data)
+{
+  *((volatile uint32_t*)(addr)) = data;
+}
+
+
+uint32_t read_reg32(uint32_t addr)
+{
+  uint32_t rdata;
+  rdata = *((volatile uint32_t*)(addr));
+  return rdata;
+}
+
 //定义中断函数
 void router_intr()
 {	
