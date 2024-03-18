@@ -10,8 +10,8 @@ set(CMAKE_ASM_FLAGS "${CMAKE_C_FLAGS}")
 # Source files
 set(SOURCE_FILES
     ../src/start.S #Keep this start file at the beginning.
-	#../src/main.c
-	../src/test.c
+	../src/main.c
+	#../src/test.c
     ../src/common.c
     ../src/intc.c
     ../src/sMPI.c
@@ -32,12 +32,14 @@ add_executable(${TARGET} ${SOURCE_FILES})
 set(LINKER_SCRIPT "${CMAKE_CURRENT_SOURCE_DIR}/../ldfile/link_GiGa_mod.ld")
 
 # Set the target properties for the linker and output file names
-set_target_properties(${TARGET} PROPERTIES
-    LINK_FLAGS "-T ${LINKER_SCRIPT} -Xlinker --gc-sections --specs=nosys.specs -nostartfiles"
-    OUTPUT_NAME "${TARGET}"
-    SUFFIX ""
-    PREFIX ""
+target_link_options(${TARGET} PRIVATE
+    -T${LINKER_SCRIPT}
+    -Xlinker --gc-sections
+    --specs=nosys.specs
+    -nostartfiles
+    -Wl,-Map=${TARGET}.map
 )
+
 
 # # Generate HEX file
 add_custom_command(TARGET ${TARGET} POST_BUILD
@@ -49,9 +51,4 @@ add_custom_command(TARGET ${TARGET} POST_BUILD
 add_custom_command(TARGET ${TARGET} POST_BUILD
     COMMAND ${CMAKE_OBJCOPY} -O binary ${TARGET} ${TARGET}.bin
     COMMENT "Creating ${TARGET}.bin file"
-)
-
-# # Generate MAP file
-add_custom_command(TARGET ${TARGET} POST_BUILD
-    COMMENT "Creating ${TARGET}.map file"
 )
