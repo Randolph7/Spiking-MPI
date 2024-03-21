@@ -128,6 +128,7 @@ uint32_t handle_trap(uint32_t mcause, uint32_t epc) {
 void handle_m_ext_interrupt() {
   write_csr(0xBCA, 1);                           // meicpct
   uint32_t int_num = (read_csr(0xFC8) >> 2) - 1; // meihap
+  write_reg32(0x40000000, int_num);
 //  printf("\nint_num is %x\n", int_num);          // For debug
   switch (int_num) {
   	/*******New*********/

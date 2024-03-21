@@ -145,45 +145,50 @@ int sMPI_router_recv_test()
 	uint32_t rdata_high;
 	uint32_t rdata_rcv_len;
 	uint32_t rdata_rcv_avail;
-
+    // write_reg32(0x40000000, 0x1234);
     rdata = read_reg32((reg32_t)LBR_REG_ADDR(RECV_BASE_ADDR));//4000 C034
 
 	rdata_rcv_avail = (rdata>>9) & 0x00000003;
 
     rdata_rcv_len = (rdata) & 0x000001ff;
 
+     write_reg32(0x40000000, rdata); 
     //Now read the mem
     //1111 1111 1111 1111 1111 0111 1111 1111 = FFFF F7FF
-    write_reg32((reg32_t)LBR_REG_ADDR(RECV_BASE_ADDR), rdata & 0xfffff7ff);        //第11bit的mask置0
+    //write_reg32((reg32_t)LBR_REG_ADDR(RECV_BASE_ADDR), rdata & 0xfffff7ff);        //第11bit的mask置0
 
-    if(rdata_rcv_avail == 1)
-    {
-        for(uint32_t i = 0; i < rdata_rcv_len; i++)
-        {
-            // 读RECV的SRAM0：4000 8000
-            rdata_low = read_reg32(LBR_SRAM_ADDR(LBR_RECV_SRAM_0) + i*8);        //写mem低位
-            rdata_high = read_reg32(LBR_SRAM_ADDR(LBR_RECV_SRAM_0) + i*8 + 4);    //写mem高位
-        }
-    }
+    // if(rdata_rcv_avail == 1)
+    // {
+    //     for(uint32_t i = 0; i < rdata_rcv_len; i++)
+    //     {
+    //         // 读RECV的SRAM0：4000 8000
+    //         rdata_low = read_reg32(LBR_SRAM_ADDR(LBR_RECV_SRAM_0) + i*8);        //写mem低位
+    //         rdata_high = read_reg32(LBR_SRAM_ADDR(LBR_RECV_SRAM_0) + i*8 + 4);    //写mem高位
+    //         write_reg32(0x40000000+i*8, rdata_low);   
+    //         write_reg32(0x40000004+i*8, rdata_high); 
+    //     }
+    // }
 
-    else if(rdata_rcv_avail == 2 || rdata_rcv_avail == 3)
-    {
-        for(uint32_t i = 0; i < rdata_rcv_len; i++)
-        {
-            // 读RECV的SRAM1：4000 9000
-            rdata_low = read_reg32(LBR_SRAM_ADDR(LBR_RECV_SRAM_1) + i*8);        //写mem低位
-            rdata_high = read_reg32(LBR_SRAM_ADDR(LBR_RECV_SRAM_1) + i*8 + 4);    //写mem高位
-        }
-    }
+    // else if(rdata_rcv_avail == 2 || rdata_rcv_avail == 3)
+    // {
+    //     for(uint32_t i = 0; i < rdata_rcv_len; i++)
+    //     {
+    //         // 读RECV的SRAM1：4000 9000
+    //         rdata_low = read_reg32(LBR_SRAM_ADDR(LBR_RECV_SRAM_1) + i*8);        //写mem低位
+    //         rdata_high = read_reg32(LBR_SRAM_ADDR(LBR_RECV_SRAM_1) + i*8 + 4);    //写mem高位
+    //         write_reg32(0x40000000+i*8, rdata_low);   
+    //         write_reg32(0x40000004+i*8, rdata_high); 
+    //     }
+    // }
 
-    else
-    {
-    	// char *wrong = "No RAM to READ!.\n";
-    	// print_str(wrong);
-    }
-   
+    // else
+    // {
+    // 	// char *wrong = "No RAM to READ!.\n";
+    // 	// print_str(wrong);
+    // }
+   // write_reg32((reg32_t)LBR_REG_ADDR(RECV_BASE_ADDR), rdata | 0x00000800);        //第11bit的mask置1
     //0000 0000 0000 0000 0000 1000 0000 0000 = 0000 0800
-    write_reg32((reg32_t)LBR_REG_ADDR(RECV_BASE_ADDR), rdata | 0x00000800);        //第11bit的mask置1
+     
 
     return 0;
 }
