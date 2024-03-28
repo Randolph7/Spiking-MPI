@@ -8,15 +8,12 @@
  ============================================================================
  */
 #include "common.h"
-
+#include "sMPI.h"
 int main(void)
 {
 
-	write_reg32(0x4000C000, 0xFF);//
-	write_reg32(0x4000C000, 0x10);//
-	write_reg32(0x4000C000, 0x11);//
-	write_reg32(0x4000C000, 0x00);//
-
+	//write_reg32(0x4000C030, 0xFFFF);
+        sMPI_router_trans_test(nonspike, sMPI_East, 1);
 	while(1)
     {
 	
