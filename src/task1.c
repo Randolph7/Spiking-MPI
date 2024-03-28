@@ -22,11 +22,10 @@ void router_intr()
 	uint32_t rdata_high;
 	uint32_t rdata_rcv_len;
 	uint32_t rdata_rcv_avail;
-    // write_reg32(0x40000000, 0x1234);
-    rdata = read_reg32((reg32_t)LBR_REG_ADDR(RECV_BASE_ADDR));//4000 C034
-
-	  rdata_rcv_avail = (rdata>>9) & 0x00000003;
-
+    
+	// write_reg32(0x40000000, 0x1234);
+	rdata = read_reg32((reg32_t)LBR_REG_ADDR(RECV_BASE_ADDR));//4000 C034
+	rdata_rcv_avail = (rdata>>9) & 0x00000003;
     rdata_rcv_len = (rdata) & 0x000001ff;
 
     //Now read the mem
@@ -59,15 +58,13 @@ void router_intr()
 
     else
     {
-    	// char *wrong = "No RAM to READ!.\n";
-    	// print_str(wrong);
+
     }
-   write_reg32((reg32_t)LBR_REG_ADDR(RECV_BASE_ADDR), rdata | 0x00000800);        //第11bit的mask置1
+   
+	write_reg32((reg32_t)LBR_REG_ADDR(RECV_BASE_ADDR), rdata | 0x00000800);        //第11bit的mask置1
     //0000 0000 0000 0000 0000 1000 0000 0000 = 0000 0800
      
 	router_rcv_int_flag = 1;
-  int i = rand();
-
 }
 
 int main(void)
@@ -79,25 +76,18 @@ int main(void)
 
     enable_int(INT_ROUTER);
     write_reg32(0x40000000, 0xAA00);//
-    // 定义并初始化一个整数数组
-//    int array[] = {1, 2, 3, 4};
- //   int *buf = array;
-    // sMPI_router_trans_test(nonspike, sMPI_East, 1);
-    //sMPI_router_bcast_test(buf, sMPI_East, sMPI_South, sMPI_West, sMPI_North);
+	
 	enable_int(INT_ROUTER);
-
 
     while(1)
     {
 		if(router_rcv_int_flag)
 		{
 			router_rcv_int_flag = 0;
-       write_reg32(0x40000000, 0x1234);
+		    write_reg32(0x40000000, 0x1234);
 			sMPI_router_recv_test();
 
-			//char *intstr = "I am in the interrupt!\n";
-			//print_str(intstr);
-      write_reg32(0x4000C000, 0xFF);//
+			write_reg32(0x4000C000, 0xFF);//
 		}
     }
 
